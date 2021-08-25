@@ -1,4 +1,3 @@
-from datetime import date
 import datetime
 year = int(input("Introduzca su año de nacimiento: "))
 month = int(input("Introduzca su mes de nacimiento. ej. Agosto = 8: "))
