@@ -3,7 +3,7 @@ import random
 end_of_game = ""
 def is_win(player, opponent):
     if (player == 'r' and opponent == 's' or player == 'p' and opponent == 'r' or player == 's'\
-        or opponent == 'p'):
+        and opponent == 'p'):
         return True 
 
 while end_of_game == "y" or end_of_game == "":
