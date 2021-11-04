@@ -1,14 +1,13 @@
 print("Comienzo")
 print("Introduzca la función factorial que quiere realizar")
-numero = int(input())
-print("Ha elegido el número ", numero)
-numeroFor = numero
-siguiente = numero
-if numero == 0:
-    resultado = 1
+operador = int(input())
+print(f"Ha elegido el número {operador}")
+numero = operador
+if numero == 0 or numero == 1:
+    operador = 1
 else:
-    for i in range(numero - 1):
-        siguiente = siguiente - 1
-        resultado = numeroFor * siguiente
-        numeroFor = resultado
-print("El resultado de la función factorial de", numero, "es", resultado)
+    for i in range(2,operador):
+        operador *= i
+
+print(f"El resultado de la función factorial de {numero} es {operador}")
+
