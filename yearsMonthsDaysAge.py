@@ -4,14 +4,14 @@ import datetime
 year = int(input("Introduzca su año de nacimiento: "))
 month = int(input("Introduzca su mes de nacimiento. ej. Agosto = 8: "))
 day = int(input("Introduzca su día de nacimiento: "))
-currentTime = datetime.datetime.now()
-currentArray = [currentTime.year, currentTime.month, currentTime.day]
+current_time = datetime.datetime.now()
+current_array = [current_time.year, current_time.month, current_time.day]
 
-birthDate = (year, month, day)
-myDate = [e1 - e2 for e1, e2 in zip(currentArray,birthDate)]
+birth_date = (year, month, day)
+my_date = [e1 - e2 for e1, e2 in zip(current_array,birth_date)]
 
-if (currentArray[1] < month):
-    myDate[1] += 12
-    myDate[0] -= 1
+if (current_array[1] < month):
+    my_date[1] += 12
+    my_date[0] -= 1
 
-print("Tienes", myDate[0], "años,", myDate[1], "meses y", myDate[2], "días"
+print("Tienes", my_date[0], "años,", my_date[1], "meses y", my_date[2], "días"
